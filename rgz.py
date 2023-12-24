@@ -112,7 +112,7 @@ def add_book():
                 author=author,
                 pages=pages,
                 publisher=publisher,
-                cover_image_url=f'uploads/{filename}'  # Путь к изображению
+                cover_image_url=f'static/kartinki/{filename}'  # Путь к изображению
             )
 
             db.session.add(new_book)
