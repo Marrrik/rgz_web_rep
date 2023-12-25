@@ -20,15 +20,3 @@ class useradmin(db.Model, UserMixin):
         self.username = username
         self.password = password
 
-# # Пример создания пользователя и добавления его в базу данных
-# # Это лучше делать через миграции SQLAlchemy, но для примера
-# # я добавлю пользователя напрямую в коде
-# from werkzeug.security import generate_password_hash
-
-# # Хэширование пароля перед сохранением в базу данных
-# hashed_password = generate_password_hash('mark2003', method='pbkdf2:sha256')
-
-# # Создание объекта пользователя и добавление в базу данных
-# new_user = UserAdmin(username='Starchenko Mark', password=hashed_password)
-# db.session.add(new_user)
-# db.session.commit()

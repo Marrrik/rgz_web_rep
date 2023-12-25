@@ -23,7 +23,21 @@
 </div>
 
     <h1>Список книг</h1>
-
+    <form action="{{ url_for('rgz.index') }}" method="get">
+      <label for="title">Название:</label>
+      <input type="text" name="title" value="{{ title_filter }}">
+      
+      <label for="author">Автор:</label>
+      <input type="text" name="author" value="{{ author_filter }}">
+      
+      <label for="pages">Количество страниц:</label>
+      <input type="text" name="pages" value="{{ pages_filter }}">
+      
+      <label for="publisher">Издательство:</label>
+      <input type="text" name="publisher" value="{{ publisher_filter }}">
+      
+      <button type="submit">Применить фильтр</button>
+  </form>
     <table>
         <thead>
           <tr>
@@ -46,8 +60,7 @@
               <td>{{ book.author }}</td>
               <td>{{ book.pages }}</td>
               <td>{{ book.publisher }}</td>
-              <td><img style="width: 100px; height: 100px;" 
-                src="{{ url_for('static', filename='kartinki/' + book.cover_image_url) }}" alt="Обложка"></td>
+              <td><img src="{{ url_for('static', filename='kartinki/' + book.cover_image_url) }}" alt="Book Cover"></td>
               {% if is_authenticated %}
                 <td>
                   <form action="{{ url_for('rgz.delete_book', book_id=book.id) }}" method="post">

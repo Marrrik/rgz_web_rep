@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+main {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+header {
+    font-size: 14pt;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+footer {
+    font-size: 14pt;
+    color: black;
+    font-weight: bold;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: blueviolet;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.error {
+    color: red;
+    background-color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.ramka {
+    margin-left: 32%;
+    border: solid;
+    border-color: blueviolet;
+    border-radius: 50px;
+    width: 500px;
+}
+
+
+.pole_tiket {
+    color: black;
+    margin: 20px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: blue;
+}
+.pole_but{
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+.pay_but {
+    border-radius: 50px;
+    background-color: blueviolet;
+    color: white;
+    height: 20px;
+    width: 40px;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.2)
+}
+
+.oplata {
+    padding: 10px;
+    width:  auto;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 50px;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+
+.glav_verh {
+    display: flex;
+}
+
+.b1 {
+    height: 30px;
+    color: rgb(75, 75, 251);
+    background-color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-left: 10%;
+    border: 2px blue solid;
+    border-radius: 5px;
+
+}
+
+.b2 {
+    margin-left: 3%;
+    border: 2px blue solid;
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    background-color: rgb(75, 75, 251);
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.zam1 {
+    display: inline;
+    color: rgb(75, 75, 251);
+    margin-left: 25%;
+    height: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.zam2 {
+    display: inline;
+    color: rgb(75, 75, 251);
+    margin-left: 5%;
+    height: 30px;
+    margin-right: 18%;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.oform_zam{
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%; /* Ширина таблицы занимает 100% ширины контейнера */
+    border-collapse: collapse; /* Объединение границ ячеек таблицы */
+  }
+
+  th, td {
+    border: 1px solid #dddddd; /* Границы ячеек и заголовков таблицы */
+    text-align: left; /* Выравнивание текста в ячейках */
+    padding: 8px; /* Внутренний отступ в ячейках */
+    width: 100px; /* Фиксированная ширина ячеек */
+  }
+
+  img {
+    max-width: 100px; /* Максимальная ширина изображения */
+    max-height: 100px; /* Максимальная высота изображения */
+  }
