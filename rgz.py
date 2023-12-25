@@ -101,7 +101,8 @@ def add_book():
         cover_image = request.files.get('cover_image')
 
         if cover_image:
-            filename = save_uploaded_file(cover_image, 'static/kartinki')  # Передача 'static/kartinki' в качестве upload_folder
+            # Используйте функцию save_uploaded_file для сохранения оригинального имени файла
+            filename = save_uploaded_file(cover_image, 'static/kartinki')
 
             if filename:
                 max_id = db.session.query(func.max(book.id)).scalar()
